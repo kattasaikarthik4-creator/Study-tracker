@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_API_URL || "https://study-tracker-pcea.onrender.com";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://study-tracker-pcea.onrender.com";
 export async function apiRequest(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
   
